@@ -1,7 +1,7 @@
+import kingdomRouter from "./kingdom.js";
+
 const Router = (app) => {
-    app.get('/', (req, res) => {
-        res.json({ message: 'Server is running' })
-    });
+    app.use('/kingdoms', kingdomRouter)
 }
 
 export default Router;
