@@ -1,14 +1,14 @@
 import express from 'express';
 import dotenv from 'dotenv';
 
+import Router from './router/index.js';
+
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT;
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+Router(app);
 
 app.listen(PORT, () => {
-    console.clear();
   console.log(`Server is running on http://localhost:${PORT}`);
 })
