@@ -1,7 +1,7 @@
 import express from 'express';
 const kingdomRouter = express.Router();
 
-import kingdomController from '../components/kingdom.controller.js';
+import kingdomController from '../controllers/kingdom.controller.js';
 
 kingdomRouter.get('/', kingdomController.getAllKingdoms);
 kingdomRouter.post('/', kingdomController.createKingdom);

@@ -1,7 +1,7 @@
 import express from 'express';
 const phylumRouter = express.Router();
 
-import phylumController from '../components/phylum.controller.js';
+import phylumController from '../controllers/phylum.controller.js';
 
 phylumRouter.get('/', phylumController.getAllPhylums);
 phylumRouter.post('/', phylumController.createPhylum);
